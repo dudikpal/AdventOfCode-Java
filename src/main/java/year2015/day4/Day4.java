@@ -8,7 +8,9 @@ public class Day4 {
   
   private static MessageDigest md;
   
+  
   public long part1(String input, String startWith) {
+    
     long additionNumber = 0;
     String hashtext = "";
     instantiateMD5Digest();
@@ -23,7 +25,9 @@ public class Day4 {
     return additionNumber;
   }
   
+  
   private void instantiateMD5Digest() {
+    
     try {
       md = MessageDigest.getInstance("MD5");
     } catch (NoSuchAlgorithmException nsae) {
@@ -31,10 +35,14 @@ public class Day4 {
     }
   }
   
+  
   private String appendZeroesToFront(String str) {
-    while (str.length() < 32) {
-      str = "0" + str;
+  
+    StringBuilder sb = new StringBuilder(str);
+    while (sb.length() < 32) {
+      sb.insert(0, "0");
     }
+    str = sb.toString();
     return str;
   }
 }

@@ -2,11 +2,8 @@ package year2015.day4;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class Day4Test {
