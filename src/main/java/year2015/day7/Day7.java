@@ -129,10 +129,6 @@ public class Day7 {
             while ((line = br.readLine()) != null) {
                 line = line.replace(" ->", "");
                 String[] words = line.split(" ");
-                
-                /*if (words.length == 2) {
-                    wires.put(words[1], Integer.parseInt(words[0]));
-                }*/
                 commands.add(words);
             }
         } catch (IOException ioe) {
