@@ -1,5 +1,7 @@
 package year2022.day1;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
@@ -15,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Day1Test {
 
-    private static Day1 day1 = new Day1();
+    private Day1 day1 = new Day1();
 
     @Test
     void part1ExampleTest() {
@@ -44,8 +46,14 @@ class Day1Test {
     @Test
     void part1Test() {
         InputStream is = Day1.class.getResourceAsStream("input.txt");
-
         day1.readWordsFromFile(is);
         assertEquals(70296, day1.part1());
+    }
+
+    @Test
+    void part2Test() {
+        InputStream is = Day1.class.getResourceAsStream("input.txt");
+        day1.readWordsFromFile(is);
+        assertEquals(205381, day1.part2());
     }
 }
