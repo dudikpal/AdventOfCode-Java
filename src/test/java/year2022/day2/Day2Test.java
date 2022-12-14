@@ -25,9 +25,15 @@ class Day2Test {
     }
 
     @Test
-    void part1() {
+    void part1Test() {
         InputStream is = this.getClass().getResourceAsStream("input.txt");
         assertEquals(8392, day2.part1(FileRead.readByLines(is)));
+    }
+
+    @Test
+    void part2Test() {
+        InputStream is = this.getClass().getResourceAsStream("input.txt");
+        assertEquals(10116, day2.part2(FileRead.readByLines(is)));
     }
 
 }
