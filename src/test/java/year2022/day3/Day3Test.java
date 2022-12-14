@@ -33,4 +33,10 @@ class Day3Test {
         InputStream is = this.getClass().getResourceAsStream("input.txt");
         assertEquals(7826, day3.part1(FileRead.readByLines(is)));
     }
+
+    @Test
+    void part2Test() {
+        InputStream is = this.getClass().getResourceAsStream("input.txt");
+        assertEquals(2577, day3.part2(FileRead.readByLines(is)));
+    }
 }
