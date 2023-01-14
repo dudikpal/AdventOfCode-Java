@@ -48,15 +48,13 @@ public class Day3 {
 		return data;
 	}
 
-	private int sumSpiral() {
+	private void sumSpiral() {
 		sumRight();
 		sumUp();
 		step++;
 		sumLeft();
 		sumDown();
 		step++;
-
-		return 0;
 	}
 
 	private int sumDown() {
@@ -170,14 +168,13 @@ public class Day3 {
 		return 0;
 	}
 
-	private int spiral() {
+	private void spiral() {
 		right();
 		up();
 		step++;
 		left();
 		down();
 		step++;
-		return step;
 	}
 
 	private int right() {
