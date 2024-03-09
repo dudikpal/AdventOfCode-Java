@@ -1,19 +1,11 @@
 package year2023.day1;
 
-import com.sun.tools.javac.Main;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Day1 {
-
-	public static void main(String[] args) {
-		Main main = new Main();
-		Day1 day1 = new Day1();
-	}
 
 	public int part1(List <String> inputList) {
 
